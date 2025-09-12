@@ -22,7 +22,7 @@ export default function handler(req, res) {
 
     {
       id: 2,
-      name: "Violla shevia a.r.",
+      name: "Violla shevia A.R.",
       role: "Wakil Ketua",
       profilePic: "",
       birthDate: "15 Januari 2005",
