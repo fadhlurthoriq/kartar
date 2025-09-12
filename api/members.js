@@ -5,7 +5,7 @@ export default function handler(req, res) {
       id: 1,
       name: "Zivanna Yunita A.",
       role: "Ketua",
-      profilePic: "",
+      profilePic: "img/member/emboh.png",
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
