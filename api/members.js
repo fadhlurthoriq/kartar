@@ -9,6 +9,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -26,6 +28,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -43,6 +47,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -60,6 +66,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -77,6 +85,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -94,6 +104,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -111,6 +123,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -128,6 +142,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -145,6 +161,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -162,6 +180,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -179,6 +199,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -196,6 +218,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -213,6 +237,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -230,6 +256,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -247,6 +275,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -264,6 +294,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -281,6 +313,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -298,6 +332,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -315,6 +351,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -332,6 +370,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -349,6 +389,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -366,6 +408,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -383,6 +427,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -400,6 +446,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -417,6 +465,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",
@@ -434,6 +484,8 @@ export default function handler(req, res) {
       birthDate: "15 Januari 2005",
       address: "Jl. Merdeka No. 123, Jakarta",
       birthday: "15 Januari",
+      wa: "081245678234",
+      ig: "apapun_yah",
       photos: [
         "",
         "",

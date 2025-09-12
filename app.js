@@ -65,6 +65,22 @@
                 <div class="detail-value">${member.birthday || '-'}</div>
               </div>
             </div>
+
+            <div class="detail-row">
+              <div class="detail-icon" style="color=green"><i class="fab fa-whatsapp"></i></div>
+              <div class="detail-text">
+                <div class="detail-label">Birthday</div>
+                <div class="detail-value">${member.wa || '-'}</div>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              div class="detail-icon" style="color=pink"><i class="fab fa-instagram"></i></div>
+              <div class="detail-text">
+                <div class="detail-label">Birthday</div>
+                <div class="detail-value">${member.ig || '-'}</div>
+              </div>
+            </div>
             
             <div class="photo-gallery">
               <div class="gallery-title">📷 My Photo</div>
