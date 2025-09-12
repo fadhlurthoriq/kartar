@@ -1,10 +1,89 @@
-:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
-body{margin:0;padding:16px;background:#f7f7fb;color:#111}
-.site-header{max-width:900px;margin:0 auto 24px}
-h1{margin:0;font-size:1.6rem}
-.members-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.member{display:flex;gap:8px;align-items:center;background:#fff;padding:10px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
-.member img{width:56px;height:56px;border-radius:50%;object-fit:cover}
-.member .meta{display:flex;flex-direction:column}
-#loading{color:#666}
-#error{color:#b00020}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.member-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.member-header {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.member-header strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.member-header span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Detail awalnya tersembunyi */
+.member-details {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.member-card.expanded .member-details {
+  max-height: 400px; /* cukup tinggi untuk detail */
+  padding: 16px;
+}
+
+.member-details p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+}
+
+/* Galeri foto */
+.member-gallery {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.member-gallery img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Highlight jabatan utama */
+.member-card.ketua { border-left: 6px solid #e74c3c; }
+.member-card.wakil { border-left: 6px solid #3498db; }
+.member-card.sekretaris { border-left: 6px solid #2ecc71; }
+.member-card.bendahara { border-left: 6px solid #f1c40f; }

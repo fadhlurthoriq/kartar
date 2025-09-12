@@ -1,42 +1,70 @@
-const API_ENDPOINT = '/api/members'; // otomatis panggil endpoint di vercel
-
 const membersListEl = document.getElementById('membersList');
-const loadingEl = document.getElementById('loading');
-const errorEl = document.getElementById('error');
 
-async function fetchMembers() {
-  try {
-    const res = await fetch(API_ENDPOINT);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    renderMembers(data);
-  } catch (err) {
-    console.error(err);
-    errorEl.hidden = false;
-    errorEl.textContent = 'Gagal memuat data anggota.';
-  } finally {
-    loadingEl.style.display = 'none';
+// Dummy data dulu
+const members = [
+  {
+    nama: "Budi",
+    jabatan: "Ketua",
+    lahir: "01-01-2000",
+    rumah: "Jakarta",
+    kata: "Semangat berkarya!",
+    foto: ["https://via.placeholder.com/80", "https://via.placeholder.com/80"]
+  },
+  {
+    nama: "Siti",
+    jabatan: "Sekretaris",
+    lahir: "05-02-2001",
+    rumah: "Bandung",
+    kata: "Kerja ikhlas itu kunci.",
+    foto: ["https://via.placeholder.com/80"]
+  },
+  {
+    nama: "Andi",
+    jabatan: "Bendahara",
+    lahir: "20-03-2002",
+    rumah: "Surabaya",
+    kata: "Uang adalah amanah.",
+    foto: ["https://via.placeholder.com/80", "https://via.placeholder.com/80", "https://via.placeholder.com/80"]
+  },
+  {
+    nama: "Rina",
+    jabatan: "Anggota",
+    lahir: "10-04-2003",
+    rumah: "Yogyakarta",
+    kata: "Kebersamaan itu indah.",
+    foto: []
   }
-}
+];
 
 function renderMembers(list) {
-  if (!Array.isArray(list) || list.length === 0) {
-    membersListEl.innerHTML = '<li>Tidak ada data anggota.</li>';
-    return;
-  }
   membersListEl.innerHTML = '';
   list.forEach(m => {
-    const li = document.createElement('li');
-    li.className = 'member';
-    li.innerHTML = `
-      <img src="${m.avatar}" alt="${m.nama}" loading="lazy" />
-      <div class="meta">
+    const card = document.createElement('div');
+    card.className = `member-card ${m.jabatan.toLowerCase()}`;
+
+    card.innerHTML = `
+      <div class="member-header">
         <strong>${m.nama}</strong>
         <span>${m.jabatan}</span>
       </div>
+      <div class="member-details">
+        <p><b>Nama Lengkap:</b> ${m.nama}</p>
+        <p><b>Jabatan:</b> ${m.jabatan}</p>
+        <p><b>Tanggal Lahir:</b> ${m.lahir}</p>
+        <p><b>Rumah:</b> ${m.rumah}</p>
+        <p><b>Kata-kata:</b> "${m.kata}"</p>
+        <div class="member-gallery">
+          ${m.foto.map(f => `<img src="${f}" alt="foto ${m.nama}">`).join("")}
+        </div>
+      </div>
     `;
-    membersListEl.appendChild(li);
+
+    card.addEventListener('click', () => {
+      card.classList.toggle('expanded');
+    });
+
+    membersListEl.appendChild(card);
   });
 }
 
-fetchMembers();
+renderMembers(members);
