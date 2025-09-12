@@ -156,7 +156,7 @@ body {
 }
 
 /* Birthday/Born - Icon Cake (warna orange/gold) */
-.detail-icon .fa-gift {
+.detail-icon i .fa-gift {
   color: #ff6b35;
   background: linear-gradient(135deg, #fff5e6, #ffe0cc);
   border-radius: 50%;
@@ -164,7 +164,7 @@ body {
 }
 
 /* House/Rumah - Warna Biru */
-.detail-icon .fa-calendar-day {
+.detail-icon i .fa-calendar-day {
   color: #2196F3;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border-radius: 50%;
@@ -172,7 +172,7 @@ body {
 }
 
 /* Birthday/Lokasi - Warna Merah */
-.detail-icon .fa-location-dot{
+.detail-icon i .fa-location-dot{
   color: #f44336;
   background: linear-gradient(135deg, #ffebee, #ffcdd2);
   border-radius: 50%;
@@ -180,7 +180,7 @@ body {
 }
 
 /* WhatsApp - Warna Hijau */
-.detail-icon .fa-whatsapp {
+.detail-icon i .fa-whatsapp {
   color: #25D366;
   background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
   border-radius: 50%;
@@ -188,7 +188,7 @@ body {
 }
 
 /* Instagram - Pink Gradient */
-.detail-icon .fa-instagram {
+.detail-icon i .fa-instagram {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: white;
   border-radius: 50%;
@@ -196,31 +196,31 @@ body {
 }
 
 /* Hover Effects */
-.detail-icon:hover {
+.detail-icon i :hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.detail-icon:hover .fa-calendar-day {
+.detail-icon i :hover .fa-calendar-day {
   color: #1976D2;
   transform: scale(1.1);
 }
 
-.detail-icon:hover .fa-location-dot {
+.detail-icon i :hover .fa-location-dot {
   color: #d32f2f;
   transform: scale(1.1);
 }
 
-.detail-icon:hover .fa-whatsapp {
+.detail-icon i :hover .fa-whatsapp {
   color: #128C7E;
   transform: scale(1.1);
 }
 
-.detail-icon:hover .fa-instagram {
+.detail-icon i :hover .fa-instagram {
   transform: scale(1.1);
 }
 
-.detail-icon:hover .fa-gift {
+.detail-icon i :hover .fa-gift {
   color: #e65100;
   transform: scale(1.1);
 }
