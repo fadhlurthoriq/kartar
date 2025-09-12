@@ -27,7 +27,7 @@
     }
 
     membersList.innerHTML = membersData.map(member => `
-      <div class="member-card" id="card-${member.id}" onclick="toggleCard(${member.id})">
+      <div class="member-card" id="card-${member.id}">
         <div class="card-header">
           <div class="profile-pic">
             <img src="${member.profilePic}" alt="${member.name}" 
@@ -97,6 +97,21 @@
       </div>
     `).join('');
   }
+
+      function addExpandListeners() {
+        const expandButtons = document.querySelectorAll('.expand-icon');
+        expandButtons.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+          e.stopPropagation(); // cegah klik header/card
+          const cardId = btn.getAttribute("data-id");
+          toggleCard(cardId);
+          });
+        });
+      }
+
+    renderMembers(allMembers);
+    addExpandListeners();
+
 
   let allMembers = []; // simpan semua data dari API
 
