@@ -75,7 +75,7 @@
             </div>
 
             <div class="detail-row">
-              <div class="detail-icon"><i class="fab fa-instagram"></i></div>
+              <div class="detail-icon"><i class="fab fa-instagram"></i></div> 
               <div class="detail-text">
                 <div class="detail-label">Instagram</div>
                 <div class="detail-value">${member.ig || '-'}</div>

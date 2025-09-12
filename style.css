@@ -152,6 +152,15 @@ body {
     font-size: 16px;
 }
 
+.detail-icon i {
+    font-size: 18px;
+    color: #666;
+}
+
+.detail-icon .fab {
+  color: #007bff; /* Warna untuk brand icons */
+}
+
 .detail-text {
     flex: 1;
     font-family: 'Nunito', sans-serif;
