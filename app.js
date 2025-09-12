@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                 id: 5,
                 name: "chwbliwe",
                 profilePic: "img/koceng.jpeg",
-                role: "Koordinator Acara",
+                role: "Anggota",
                 birthDate: "22 September 2004",
                 address: "Jl. Sudirman No. 89, Medan",
                 birthday: "22 September",
