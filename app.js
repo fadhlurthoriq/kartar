@@ -31,13 +31,13 @@
         <div class="card-header">
           <div class="profile-pic">
             <img src="${member.profilePic}" alt="${member.name}" 
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='${member.name.charAt(0).toUpperCase()}';">
+                onerror="this.style.display='none'; this.parentElement.innerHTML='${member.name.charAt(0).toUpperCase()}';">
           </div>
           <div class="member-info">
             <h3>${member.name}</h3>
             <div class="member-role">${member.role}</div>
           </div>
-          <div class="expand-icon">▼</div>
+          <div class="expand-icon">v</div>
         </div>
         
         <div class="card-details">
