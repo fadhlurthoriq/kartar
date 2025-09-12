@@ -98,11 +98,17 @@
     `).join('');
   }
 
+  let allMembers = []; // simpan semua data dari API
+
+
   // Function ambil data dari API
   async function fetchMembers() {
     try {
       const res = await fetch("/api/members");
       const data = await res.json();
+
+      allMembers = data; // simpan data asli
+      renderMembers(allMembers); 
 
       console.log("Data anggota:", data); // cek apakah datanya keluar
       renderMembers(data); 
