@@ -1,21 +1,3 @@
-  // State untuk mengtrack card mana yang sedang expanded
-  const expandedCards = new Set();
-
-  // Function untuk toggle expand card
-  function toggleCard(cardId) {
-    const card = document.getElementById(`card-${cardId}`);
-    
-    if (expandedCards.has(cardId)) {
-      // Tutup card
-      card.classList.remove('expanded');
-      expandedCards.delete(cardId);
-    } else {
-      // Buka card
-      card.classList.add('expanded');
-      expandedCards.add(cardId);
-    }
-  }
-
   // Function untuk render anggota
   function renderMembers(membersData) {
     const membersList = document.getElementById('membersList');
