@@ -71,7 +71,7 @@
               <div class="photo-grid">
                 ${(member.photos || []).map(photo => `
                   <div class="photo-item">
-                    <img src="${photo}" alt="Foto kegiatan">
+                    <img src="${photo}" alt="Foto ku dewe">
                   </div>
                 `).join('')}
               </div>
