@@ -158,7 +158,6 @@ body {
 /* Birthday/Born - Icon Cake (warna orange/gold) */
 .fa-gift {
   color: #ff6b35;
-  background: linear-gradient(135deg, #fff5e6, #ffe0cc);
   border-radius: 50%;
   padding: 8px;
 }
@@ -166,7 +165,6 @@ body {
 /* House/Rumah - Warna Biru */
 .fa-calendar-day {
   color: #2196F3;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border-radius: 50%;
   padding: 8px;
 }
@@ -174,7 +172,6 @@ body {
 /* Birthday/Lokasi - Warna Merah */
 .fa-location-dot{
   color: #f44336;
-  background: linear-gradient(135deg, #ffebee, #ffcdd2);
   border-radius: 50%;
   padding: 8px;
 }
@@ -182,21 +179,19 @@ body {
 /* WhatsApp - Warna Hijau */
 .fa-whatsapp {
   color: #25D366;
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
   border-radius: 50%;
   padding: 8px;
 }
 
 /* Instagram - Pink Gradient */
 .fa-instagram {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: white;
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   border-radius: 50%;
   padding: 8px;
 }
 
 /* Hover Effects */
-/* .detail-icon i :hover {
+.detail-icon i :hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -227,7 +222,7 @@ body {
 .detail-text {
     flex: 1;
     font-family: 'Nunito', sans-serif;
-} */
+}
 
 .detail-label {
     font-size: 0.85rem;
