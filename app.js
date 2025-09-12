@@ -1,3 +1,41 @@
+const membersListEl = document.getElementById('membersList');
+
+// Dummy data dulu
+const members = [
+  {
+    nama: "Budi",
+    jabatan: "Ketua",
+    lahir: "01-01-2000",
+    rumah: "Jakarta",
+    kata: "Semangat berkarya!",
+    foto: ["https://via.placeholder.com/80", "https://via.placeholder.com/80"]
+  },
+  {
+    nama: "Siti",
+    jabatan: "Sekretaris",
+    lahir: "05-02-2001",
+    rumah: "Bandung",
+    kata: "Kerja ikhlas itu kunci.",
+    foto: ["https://via.placeholder.com/80"]
+  },
+  {
+    nama: "Andi",
+    jabatan: "Bendahara",
+    lahir: "20-03-2002",
+    rumah: "Surabaya",
+    kata: "Uang adalah amanah.",
+    foto: ["https://via.placeholder.com/80", "https://via.placeholder.com/80", "https://via.placeholder.com/80"]
+  },
+  {
+    nama: "Rina",
+    jabatan: "Anggota",
+    lahir: "10-04-2003",
+    rumah: "Yogyakarta",
+    kata: "Kebersamaan itu indah.",
+    foto: []
+  }
+];
+
 function renderMembers(list) {
   membersListEl.innerHTML = '';
   list.forEach(m => {
@@ -29,3 +67,6 @@ function renderMembers(list) {
     membersListEl.appendChild(li);
   });
 }
+
+
+renderMembers(members);
