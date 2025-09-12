@@ -2,17 +2,17 @@
   const expandedCards = new Set();
 
   // Function untuk toggle expand card
-  function toggleCard(cardIcon) {
-    const card = document.getElementById(`card-${cardIcon}`);
+  function toggleCard(cardId) {
+    const card = document.getElementById(`card-${cardId}`);
     
-    if (expandedCards.has(cardIcon)) {
+    if (expandedCards.has(cardId)) {
       // Tutup card
       card.classList.remove('expanded');
-      expandedCards.delete(cardIcon);
+      expandedCards.delete(cardId);
     } else {
       // Buka card
       card.classList.add('expanded');
-      expandedCards.add(cardIcon);
+      expandedCards.add(cardId);
     }
   }
 
@@ -37,7 +37,7 @@
             <h3>${member.name}</h3>
             <div class="member-role">${member.role}</div>
           </div>
-          <div class="expand-icon">${cardIcon}▼</div>
+          <div class="expand-icon">▼</div>
         </div>
         
         <div class="card-details">
