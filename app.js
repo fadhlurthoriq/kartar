@@ -1,12 +1,29 @@
+  // State untuk mengtrack card mana yang sedang expanded
+  const expandedCards = new Set();
+
+  // Function untuk toggle expand card
+  function toggleCard(cardId) {
+    const card = document.getElementById(`card-${cardId}`);
+    
+    if (expandedCards.has(cardId)) {
+      // Tutup card
+      card.classList.remove('expanded');
+      expandedCards.delete(cardId);
+    } else {
+      // Buka card
+      card.classList.add('expanded');
+      expandedCards.add(cardId);
+    }
+  }
+
   // Function untuk render anggota
   function renderMembers(membersData) {
-    const membersList = document.getElementById('membersList');
-    console.log("membersData:", membersData, Array.isArray(membersData));
-
-    if (!Array.isArray(membersData)) {
-      membersList.innerHTML = `<p style="color:red;">Data anggota tidak valid</p>`;
-      return;
-    }
+    document.getElementById('membersList').addEventListener('click', (e) => {
+      if (e.target.classList.contains('expand-icon')) {
+        const cardId = e.target.getAttribute("data-id");
+        toggleCard(cardId);
+        }
+      });
 
     membersList.innerHTML = membersData.map(member => `
       <div class="member-card" id="card-${member.id}">
