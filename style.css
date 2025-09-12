@@ -49,8 +49,10 @@ body {
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
     border: 2px solid #cccccc;
+    -webkit-tap-highlight-color: transparent; /* Safari / Chrome */
+    -webkit-user-select: none;  /* Cegah teks terseleksi saat klik */
+    user-select: none;
 }
 
 .member-card:hover {
@@ -108,12 +110,16 @@ body {
     height: 24px;
     border-radius: 50%;
     /* background: #000000; */
+    cursor: pointer;
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
     font-size: 17px;
+    -webkit-tap-highlight-color: transparent; /* Safari / Chrome */
+    -webkit-user-select: none;  /* Cegah teks terseleksi saat klik */
+    user-select: none;
 }
 
 .member-card.expanded .expand-icon {
