@@ -115,6 +115,19 @@
       document.getElementById('membersList').innerHTML = `<p style="color:red;">Gagal mengambil data anggota</p>`;
     }
   }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  fetchMembers();
 
-  // Jalankan fetchMembers setelah DOM siap
-  document.addEventListener('DOMContentLoaded', fetchMembers);
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', (e) => {
+    const keyword = e.target.value.toLowerCase();
+
+    const filtered = allMembers.filter(member => 
+      member.name.toLowerCase().includes(keyword)
+    );
+
+    renderMembers(filtered);
+  });
+});
+
