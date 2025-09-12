@@ -1,30 +1,22 @@
-  // State untuk mengtrack card mana yang sedang expanded
-  const expandedCards = new Set();
+// State untuk track card yang expanded
+const expandedCards = new Set();
 
-  // Function untuk toggle expand card
-  function toggleCard(cardId) {
-    const card = document.getElementById(`card-${cardId}`);
-    
-    if (expandedCards.has(cardId)) {
-      // Tutup card
-      card.classList.remove('expanded');
-      expandedCards.delete(cardId);
-    } else {
-      // Buka card
-      card.classList.add('expanded');
-      expandedCards.add(cardId);
-    }
+function toggleCard(cardId) {
+  const card = document.getElementById(`card-${cardId}`);
+  if (!card) return;
+
+  if (expandedCards.has(cardId)) {
+    card.classList.remove('expanded');
+    expandedCards.delete(cardId);
+  } else {
+    card.classList.add('expanded');
+    expandedCards.add(cardId);
   }
+}
 
   // Function untuk render anggota
-  function renderMembers(membersData) {
-    document.getElementById('membersList').addEventListener('click', (e) => {
-      if (e.target.classList.contains('expand-icon')) {
-        const cardId = e.target.getAttribute("data-id");
-        toggleCard(cardId);
-        }
-      });
-
+function renderMembers(membersData) {
+  const membersList = document.getElementById('membersList');
     membersList.innerHTML = membersData.map(member => `
       <div class="member-card" id="card-${member.id}">
         <div class="card-header">
@@ -115,33 +107,25 @@
     }
   }
 
-      function addExpandListeners() {
-        const expandButtons = document.querySelectorAll('.expand-icon');
-        expandButtons.forEach(btn => {
-          btn.addEventListener('click', (e) => {
-          e.stopPropagation(); // cegah klik header/card
-          const cardId = btn.getAttribute("data-id");
-          toggleCard(cardId);
-          });
-        });
-      }
-
-    renderMembers(allMembers);
-    addExpandListeners();
-  
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   fetchMembers();
 
+  // ✅ Event delegation untuk expand
+  document.getElementById('membersList').addEventListener('click', (e) => {
+    if (e.target.classList.contains('expand-icon')) {
+      const cardId = e.target.getAttribute("data-id");
+      toggleCard(cardId);
+    }
+  });
+
+  // Search
   const searchInput = document.getElementById('searchInput');
   searchInput.addEventListener('input', (e) => {
     const keyword = e.target.value.toLowerCase();
-
     const filtered = allMembers.filter(member => 
       member.name.toLowerCase().includes(keyword)
     );
-
     renderMembers(filtered);
-    addExpandListeners();
   });
 });
 
