@@ -54,7 +54,7 @@ export default function handler(req, res) {
 
     {
       id: 4,
-      name: "Abelfi Lovely S.h.",
+      name: "Abelfi Lovely S.H.",
       role: "Bendahara",
       profilePic: "",
       birthDate: "15 Januari 2005",
@@ -71,7 +71,41 @@ export default function handler(req, res) {
 
     {
       id: 5,
-      name: " Gilas Kusuma A.",
+      name: "Gilas Kusuma A.",
+      role: "Anggota",
+      profilePic: "",
+      birthDate: "15 Januari 2005",
+      address: "Jl. Merdeka No. 123, Jakarta",
+      birthday: "15 Januari",
+      photos: [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+
+    {
+      id: 6,
+      name: "Ridwan Darma P.",
+      role: "Anggota",
+      profilePic: "",
+      birthDate: "15 Januari 2005",
+      address: "Jl. Merdeka No. 123, Jakarta",
+      birthday: "15 Januari",
+      photos: [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+
+    {
+      id: 7,
+      name: "Alini audia S.",
       role: "Anggota",
       profilePic: "",
       birthDate: "15 Januari 2005",
