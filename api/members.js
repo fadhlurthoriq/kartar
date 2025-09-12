@@ -156,7 +156,7 @@ export default function handler(req, res) {
 
     {
       id: 10,
-      name: " M.Hilmi T.",
+      name: "M.Hilmi T.",
       role: "Anggota",
       profilePic: "",
       birthDate: "15 Januari 2005",
@@ -173,7 +173,7 @@ export default function handler(req, res) {
 
     {
       id: 11,
-      name: "⁠Nidia Hardiyanti",
+      name: "Nidia Hardiyanti",
       role: "Anggota",
       profilePic: "",
       birthDate: "15 Januari 2005",
