@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', renderMembers);
             }
         ];
 
+
         // State untuk mengtrack card mana yang sedang expanded
         const expandedCards = new Set();
 
@@ -80,6 +81,8 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                 expandedCards.add(cardId);
             }
         }
+
+        
 
         // Function untuk render anggota
         function renderMembers() {
@@ -141,6 +144,4 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                 </div>
             `).join('');
         }
-
-        // Render saat halaman dimuat
-       
+     
