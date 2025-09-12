@@ -98,21 +98,6 @@
     `).join('');
   }
 
-      function addExpandListeners() {
-        const expandButtons = document.querySelectorAll('.expand-icon');
-        expandButtons.forEach(btn => {
-          btn.addEventListener('click', (e) => {
-          e.stopPropagation(); // cegah klik header/card
-          const cardId = btn.getAttribute("data-id");
-          toggleCard(cardId);
-          });
-        });
-      }
-
-    renderMembers(allMembers);
-    addExpandListeners();
-
-
   let allMembers = []; // simpan semua data dari API
 
 
@@ -130,6 +115,20 @@
       document.getElementById('membersList').innerHTML = `<p style="color:red;">Gagal mengambil data anggota</p>`;
     }
   }
+
+      function addExpandListeners() {
+        const expandButtons = document.querySelectorAll('.expand-icon');
+        expandButtons.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+          e.stopPropagation(); // cegah klik header/card
+          const cardId = btn.getAttribute("data-id");
+          toggleCard(cardId);
+          });
+        });
+      }
+
+    renderMembers(allMembers);
+    addExpandListeners();
   
   document.addEventListener('DOMContentLoaded', () => {
   fetchMembers();
