@@ -107,7 +107,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .member-card.expanded .expand-icon {

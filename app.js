@@ -37,7 +37,7 @@
             <h3>${member.name}</h3>
             <div class="member-role">${member.role}</div>
           </div>
-          <div class="expand-icon">v</div>
+          <div class="expand-icon">▼</div>
         </div>
         
         <div class="card-details">
