@@ -110,8 +110,6 @@
       allMembers = data; // simpan data asli
       renderMembers(allMembers); 
 
-      console.log("Data anggota:", data); // cek apakah datanya keluar
-      renderMembers(data); 
     } catch (error) {
       console.error("Gagal mengambil data:", error);
       document.getElementById('membersList').innerHTML = `<p style="color:red;">Gagal mengambil data anggota</p>`;
