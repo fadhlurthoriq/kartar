@@ -196,7 +196,7 @@ body {
 }
 
 /* Hover Effects */
-.detail-icon i :hover {
+/* .detail-icon i :hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -227,7 +227,7 @@ body {
 .detail-text {
     flex: 1;
     font-family: 'Nunito', sans-serif;
-}
+} */
 
 .detail-label {
     font-size: 0.85rem;
