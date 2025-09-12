@@ -50,11 +50,11 @@ export default function handler(req, res) {
       wa: "081245678234",
       ig: "apapun_yah",
       photos: [
-        "img/member/caca.png",
-        "img/member/caca.png",
-        "img/member/caca.png",
-        "img/member/caca.png",
-        "img/member/caca.png"
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     },
 
