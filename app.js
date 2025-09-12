@@ -4,17 +4,19 @@ document.addEventListener('DOMContentLoaded', renderMembers);
             {
                 id: 1,
                 name: "Satria Anugrah P",
+                profilePic: "img/koceng.jpeg",
                 role: "Ketua",
                 birthDate: "15 Januari 2005",
                 address: "Jl. Merdeka No. 123, Jakarta",
                 birthday: "15 Januari",
                 photos: [
-                    "📸", "🎓", "🏆", "⚽"
+                    "img/koceng.jpeg","img/koceng.jpeg","img/koceng.jpeg","img/koceng.jpeg","img/koceng.jpeg"
                 ]
             },
             {
                 id: 2,
-                name: "Anisa Putri Maharani",
+                name: "bcilaubilu",
+                profilePic: "",
                 role: "Wakil Ketua",
                 birthDate: "28 Maret 2005",
                 address: "Jl. Pemuda No. 45, Bandung",
@@ -25,7 +27,8 @@ document.addEventListener('DOMContentLoaded', renderMembers);
             },
             {
                 id: 3,
-                name: "Muhammad Rizki Fadillah",
+                name: "Keysha Az-Zahra U.",
+                profilePic: "img/koceng.jpeg",
                 role: "Sekretaris",
                 birthDate: "10 Juli 2004",
                 address: "Jl. Diponegoro No. 78, Surabaya",
@@ -36,7 +39,8 @@ document.addEventListener('DOMContentLoaded', renderMembers);
             },
             {
                 id: 4,
-                name: "Siti Nurhaliza",
+                name: "cbwlihblwiu",
+                profilePic: "",
                 role: "Bendahara",
                 birthDate: "3 November 2005",
                 address: "Jl. Ahmad Yani No. 56, Yogyakarta",
@@ -47,7 +51,8 @@ document.addEventListener('DOMContentLoaded', renderMembers);
             },
             {
                 id: 5,
-                name: "Dimas Prasetyo",
+                name: "chwbliwe",
+                profilePic: "img/koceng.jpeg",
                 role: "Koordinator Acara",
                 birthDate: "22 September 2004",
                 address: "Jl. Sudirman No. 89, Medan",
@@ -84,7 +89,7 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                 <div class="member-card" id="card-${member.id}" onclick="toggleCard(${member.id})">
                     <div class="card-header">
                         <div class="profile-pic">
-                            ${member.name.charAt(0)}
+                            <img src="${member.profilePic}" alt="${member.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='${member.name.charAt(0).toUpperCase()}';">
                         </div>
                         <div class="member-info">
                             <h3>${member.name}</h3>
@@ -100,7 +105,7 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                             <div class="detail-row">
                                 <div class="detail-icon">🎂</div>
                                 <div class="detail-text">
-                                    <div class="detail-label">Tanggal Lahir</div>
+                                    <div class="detail-label">Born</div>
                                     <div class="detail-value">${member.birthDate}</div>
                                 </div>
                             </div>
@@ -108,7 +113,7 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                             <div class="detail-row">
                                 <div class="detail-icon">🏠</div>
                                 <div class="detail-text">
-                                    <div class="detail-label">Tempat Tinggal</div>
+                                    <div class="detail-label">House</div>
                                     <div class="detail-value">${member.address}</div>
                                 </div>
                             </div>
@@ -116,16 +121,18 @@ document.addEventListener('DOMContentLoaded', renderMembers);
                             <div class="detail-row">
                                 <div class="detail-icon">🎈</div>
                                 <div class="detail-text">
-                                    <div class="detail-label">Ulang Tahun</div>
+                                    <div class="detail-label">Birthday</div>
                                     <div class="detail-value">${member.birthday}</div>
                                 </div>
                             </div>
                             
                             <div class="photo-gallery">
-                                <div class="gallery-title">📷 Foto Kegiatan</div>
+                                <div class="gallery-title">📷 My Photo</div>
                                 <div class="photo-grid">
                                     ${member.photos.map(photo => `
-                                        <div class="photo-item">${photo}</div>
+                                    <div class="photo-item">
+                                        <img src="${photo}" alt="Foto kegiatan">
+                                    </div>
                                     `).join('')}
                                 </div>
                             </div>
