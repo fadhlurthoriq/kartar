@@ -43,7 +43,7 @@
         <div class="card-details">
           <div class="details-content">
             <div class="detail-row">
-              <div class="detail-icon"><i class="fas fa-calendar"></i></div>
+              <div class="detail-icon"><i class="fa-solid fa-calendar-day"></i></div>
               <div class="detail-text">
                 <div class="detail-label">Born</div>
                 <div class="detail-value">${member.birthDate || '-'}</div>
@@ -51,7 +51,7 @@
             </div>
             
             <div class="detail-row">
-              <div class="detail-icon"><i class="fas fa-house"></i></div>
+              <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div class="detail-text">
                 <div class="detail-label">House</div>
                 <div class="detail-value">${member.address || '-'}</div>
@@ -59,7 +59,7 @@
             </div>
             
             <div class="detail-row">
-              <div class="detail-icon"><i class="fas fa-gift"></i></div>
+              <div class="detail-icon"><i class="fa-solid fa-gift"></i></div>
               <div class="detail-text">
                 <div class="detail-label">Birthday</div>
                 <div class="detail-value">${member.birthday || '-'}</div>
