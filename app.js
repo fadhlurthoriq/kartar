@@ -67,7 +67,7 @@
             </div>
 
             <div class="detail-row">
-              <div class="detail-icon"><<i class="fa-brands fa-whatsapp"></i></div>
+              <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
               <div class="detail-text">
                 <div class="detail-label">Whatsapp</div>
                 <div class="detail-value">${member.wa || '-'}</div>
@@ -75,7 +75,7 @@
             </div>
 
             <div class="detail-row">
-              <div class="detail-icon"><i class="<i class="fa-brands fa-instagram"></i></div>
+              <div class="detail-icon"><i class="fa-brands fa-instagram"></i></div>
               <div class="detail-text">
                 <div class="detail-label">Instagram</div>
                 <div class="detail-value">${member.ig || '-'}</div>
