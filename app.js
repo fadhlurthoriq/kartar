@@ -19,7 +19,7 @@ function renderMembers(membersData) {
   const membersList = document.getElementById('membersList');
     membersList.innerHTML = membersData.map(member => `
       <div class="member-card" id="card-${member.id}">
-        <div class="card-header">
+        <div class="card-header" id="card-${member.id}>
           <div class="profile-pic">
             <img src="${member.profilePic}" alt="${member.name}" 
                 onerror="this.style.display='none'; this.parentElement.innerHTML='${member.name.charAt(0).toUpperCase()}';">
