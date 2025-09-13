@@ -20,10 +20,10 @@ function renderMembers(membersData) {
     membersList.innerHTML = membersData.map(member => `
       <div class="member-card" id="card-${member.id}">
         <div class="card-header">
-          <div class="profile-pic">
-            <img src="${member.profilePic}" alt="${member.name}" 
-                onerror="this.style.display='none'; this.parentElement.innerHTML='${member.name.charAt(0).toUpperCase()}';">
+          <div class="profile-pic" onclick="showImagePreview('${member.profilePic}')">
+            <img src="${member.profilePic}" alt="${member.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='${member.name.charAt(0).toUpperCase()}';">
           </div>
+
           <div class="member-info">
             <h3>${member.name}</h3>
             <div class="member-role">${member.role}</div>
@@ -129,3 +129,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Ambil elemen overlay
+const overlay = document.getElementById("imagePreviewOverlay");
+const previewImage = document.getElementById("previewImage");
+const closeBtn = document.querySelector(".close-btn");
+
+// Fungsi buka overlay dengan gambar
+function showImagePreview(src) {
+  previewImage.src = src;
+  overlay.style.display = "flex"; // tampilkan (pakai flex untuk center)
+}
+
+// Tutup overlay
+closeBtn.onclick = () => {
+  overlay.style.display = "none";
+};
+overlay.onclick = (e) => {
+  if (e.target === overlay) overlay.style.display = "none"; // klik luar area gambar
+};
